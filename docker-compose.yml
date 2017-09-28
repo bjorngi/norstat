@@ -1,0 +1,6 @@
+nginx:
+        build: ./services/nginx/.
+        volumes:
+                - ./data/:/var/www/data
+        ports:
+                - 80:80
